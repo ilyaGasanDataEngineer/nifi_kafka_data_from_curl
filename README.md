@@ -79,3 +79,8 @@
 ## Запуск потока NiFi
 
 После настройки топиков и consumer'ов вы можете запустить поток NiFi для начала обработки данных.
+
+Запросв с консоли примеры:
+curl --header "Content-Type: application/json" --request POST --data '{"message": "no error message"}' 127.0.0.1:8081/loglistener
+curl --header "Content-Type: application/json" --request POST --data '{"message": "ERROR message"}' 127.0.0.1:8081/loglistener
+
